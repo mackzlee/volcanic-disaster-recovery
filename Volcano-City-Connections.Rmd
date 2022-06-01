@@ -1,0 +1,88 @@
+---
+title: "Notebook for connecting volcanos to endangered population centers"
+author: "Anne Marshall"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r load packages, message = FALSE}
+
+#library(tidyverse)
+library(patchwork)
+
+install.packages('geosphere')
+library(geosphere)
+library(dplyr)
+library(stringr)
+meters_per_mile = 1609.34
+```
+
+
+
+
+```{r load the volcano locations}
+
+
+vol_locations <- read.csv('data/Holocene_volcanos.csv',sep=",",skip = 1)
+
+vol_locations
+
+```
+
+```{r get ranked airports}
+vol_locations['Long_rang'] = 1.0/cos(vol_locations['Longitude'])
+vol_locations
+```
+
+```{r Read population centers}
+
+pop_centers <- read.csv('data/geonames-all-cities-with-a-population-1000-reduced.csv',sep=",") %>%
+  rename(geoId = 'ï..geonameId')
+
+pop_locs <- matrix(as.numeric(str_split(pop_centers$Coordinates,",",simplify=TRUE)),ncol=2)
+pop_centers["lat"]  = pop_locs[,1]
+
+pop_centers["lon"]  = pop_locs[,2]
+pop_centers
+
+```
+
+
+```{r join population centers with volcanos}
+
+distance_threshold_km = 200
+close_cities = data.frame(matrix(ncol=17,nrow=0))
+
+for (irow in 1:nrow(vol_locations)){
+  volc <- vol_locations[irow,c("Volcano.Number","Volcano.Name","Country", "Primary.Volcano.Type","Developing.Nation","Longitude","Latitude","Long_rang")]
+
+  print(volc$Volcano.Number)
+  # filter candiates for measure to within one deg lat, and close in long (depending on lat)
+  candidates <- pop_centers[abs(pop_centers$lat-volc$Latitude)< 1 & abs(pop_centers$lon - volc$Longitude) < abs(as.numeric(volc$Long_rang)),]
+  if (nrow(candidates) > 0){
+   # calculate geodesic distance
+    candidates['pop_vol_dist_km'] <- distm (candidates[,c('lon','lat')],volc[,c('Longitude','Latitude')],fun=distGeo)/1000
+    candidates['pop_vol_id'] <- volc['Volcano.Number']
+
+    print(nrow(candidates))
+    # filter to cities within range
+    match <- candidates[candidates$pop_vol_dist_km < distance_threshold_km,]
+  
+    print(nrow(match))
+    # join back with volcano data
+    match <- merge(x=match, y = volc, by.x = 'pop_vol_id',by.y='Volcano.Number')
+  
+   # append to data file
+    close_cities <- rbind(close_cities,match)
+  } else {
+    print("isolated volcano")
+  }
+  print(nrow(close_cities))
+  }
+
+#Save output
+
+write.csv(x=close_cities,file="data/volcano_cities.csv",row.names=FALSE)
+
+```
