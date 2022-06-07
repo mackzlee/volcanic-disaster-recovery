@@ -8,7 +8,7 @@ output:
 
 ```{r load packages, message = FALSE}
 
-#library(tidyverse)
+library(ggplot2)
 library(patchwork)
 
 install.packages('geosphere')
@@ -85,4 +85,89 @@ for (irow in 1:nrow(vol_locations)){
 
 write.csv(x=close_cities,file="data/volcano_cities.csv",row.names=FALSE)
 
+```
+
+```{r plot world}
+
+ggplot() +
+  geom_map(
+    data = world, map = world,
+    aes(long, lat, map_id = region)
+  ) 
+```
+
+
+
+```{r hacky stuff to make the NYC plot}
+
+
+#for(airport_num in 1:nrow(ranked_airports_exp)){
+
+counties <- map_data("county")
+
+#%>%
+#  filter(group == 166 | group ==176 | group ==172 | group ==178 | group ==180 | group ==210) 
+
+chosen <- counties %>%
+  filter(group == 1825)
+
+ candidate_counties
+ 
+ plot_counties  <- map_data("county")%>%
+  filter(group == 1835 | group ==1818 | group == 1824 | group == 1825 | group == 1797 | group == 1750) 
+
+
+plain_theme = theme(axis.text=element_blank()) + theme(panel.background = element_blank(), panel.grid = element_blank(), axis.ticks = element_blank())
+
+
+ap2 <- ap %>%
+  rename(lat=Latitude) %>%
+  rename(long=Longitude)
+
+# Add Laguardia for comparison
+	LGA	
+40.7772
+-73.8726
+
+lga <-data.frame(IATA_Code="LGA", lat=40.7772,long=-73.8726)
+
+
+
+
+ plot_counties_center <- plot_counties %>%
+   group_by(group) %>%
+   summarize(lat=mean(lat),long=mean(long)) %>%
+  mutate(name=c("Hudson, NJ","Bronx","Kings","Nassau","New York","Queens")) %>%
+    mutate(casrn= c(34017L,36005L,36047L,36059L, 36061L,36081L)) 
+ 
+
+ plot_counties_center
+ 
+ pcounties <- merge(plot_counties_center,candidate_counties,by="casrn") %>%
+   mutate(pop_text = round(DaytimePopDensity/100)*1000)
+
+ pcounties
+ 
+ #**I am trying to populations into millions right now!***
+ 
+ png("NYC.png",width=6,height=4,units="in",res=1200)
+ ggplot() + 
+  aes(x=long, y = lat) +
+  geom_polygon(data= plot_counties, aes(group=group), fill="grey90",color="grey",size=.3) +
+  geom_polygon(data= chosen, aes(group=group), fill="skyblue2",color="grey",size=.3) +
+  geom_text(data=ap2,aes(label=IATA_Code),nudge_y=.01)+
+  geom_point(data=ap2,  color = "black",size=1) +
+  geom_point(data=ap2,  color = "red",size=.5) +
+   geom_text(data=lga,aes(label=IATA_Code),nudge_y=.01)+
+  geom_point(data=lga,  color = "black",size=1) +
+  geom_point(data=lga,  color = "blue",size=.5) +
+  geom_text(data=pcounties,aes(label=name.x),nudge_y=.022,size=4) +
+   geom_text(data=pcounties,aes(label=pop_text),nudge_y=.005,size=3) +
+  labs(x="", y="") +
+  coord_fixed(1.3) +
+  plain_theme
+
+ dev.off()
+
+  
 ```

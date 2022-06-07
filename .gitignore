@@ -1,3 +1,8 @@
 
 .Rproj.user/*
 *.Rproj
+data/global_power_plant_data.csv
+data/geonames-all-cities-with-a-population-1000-reduced.csv
+data/Holocene_Volcanos.csv
+.Rhistory
+.RData
