@@ -6,3 +6,4 @@ data/geonames-all-cities-with-a-population-1000-reduced.csv
 data/Holocene_Volcanos.csv
 .Rhistory
 .RData
+.ipynb_checkpoints/*
