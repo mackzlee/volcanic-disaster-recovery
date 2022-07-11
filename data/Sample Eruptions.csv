@@ -1,0 +1,28 @@
+Volcano Number,Volcano Name,Eruption Number,Eruption Category,Area of Activity,VEI,VEI Modifier,Start Year Modifier,Start Date,Start Year,Start Year Uncertainty,Start Month,Start Day Modifier,Start Day,Start Day Uncertainty,Evidence Method (dating),End Year Modifier,End Date,End Year,End Year Uncertainty,End Month,End Day Modifier,End Day,End Day Uncertainty,Latitude,Longitude
+282050,Kuchinoerabujima,22345,Confirmed Eruption,,3,,,1/11/2020,2020,,1,,11,,Historical Observations,,5/13/2020,2020,,5,,13,,30.443,130.217
+273070,Taal,22344,Confirmed Eruption,,4,,,1/12/2020,2020,,1,,12,,Historical Observations,,1/22/2020,2020,,1,,22,,14.002,120.993
+353010,Fernandina,22347,Confirmed Eruption,,0,,,1/12/2020,2020,,1,,12,,Historical Observations,,1/13/2020,2020,,1,,13,,-0.37,-91.55
+345020,Rincon de la Vieja,22346,Confirmed Eruption,,2,,,1/30/2020,2020,,1,,30,,Historical Observations,,12/13/2020,2020,,12,,13,,10.83,-85.324
+282060,Kikai,22374,Confirmed Eruption,,1,,,10/6/2020,2020,,10,,6,,Historical Observations,,10/6/2020,2020,,10,,6,,30.793,130.305
+264230,Lewotolok,22373,Confirmed Eruption,,2,,,11/27/2020,2020,,11,,27,,Historical Observations,>,3/17/2022,2022,,3,,17,,-8.274,123.508
+332010,Kilauea,22380,Confirmed Eruption,,0,,,12/20/2020,2020,,12,,20,,Historical Observations,,5/23/2021,2021,,5,,23,,19.421,-155.287
+263310,Tengger Caldera,22382,Confirmed Eruption,,1,,,12/26/2020,2020,,12,,26,,Historical Observations,,12/28/2020,2020,,12,,28,,-7.942,112.95
+360150,Soufriere St. Vincent,22385,Confirmed Eruption,,4,,,12/27/2020,2020,,12,,27,,Historical Observations,,4/22/2021,2021,,4,,22,,13.33,-61.18
+344020,San Cristobal,22394,Confirmed Eruption,,3,,,12/27/2020,2020,,12,?,27,,Historical Observations,>,3/17/2022,2022,,3,,17,,12.702,-87.004
+263250,Merapi,22381,Confirmed Eruption,,1,,,12/31/2020,2020,,12,,31,,Historical Observations,>,3/17/2022,2022,,3,,17,,-7.54,110.446
+233020,"Fournaise, Piton de la",22371,Confirmed Eruption,,0,,,12/7/2020,2020,,12,,7,,Historical Observations,,12/8/2020,2020,,12,,8,,-21.244,55.708
+233020,"Fournaise, Piton de la",22343,Confirmed Eruption,,0,,,2/10/2020,2020,,2,,10,,Historical Observations,,4/6/2020,2020,,4,,6,,-21.244,55.708
+343100,San Miguel,22355,Confirmed Eruption,,1,,,2/22/2020,2020,,2,,22,,Historical Observations,,2/22/2020,2020,,2,,22,,13.434,-88.269
+290240,Sarychev Peak,22384,Confirmed Eruption,,1,,,2/29/2020,2020,,2,,29,1,Historical Observations,,11/26/2021,2021,,11,,26,,48.092,153.2
+255060,Kavachi,22357,Confirmed Eruption,,0,,,3/16/2020,2020,,3,,16,,Historical Observations,,4/30/2020,2020,,4,,30,,-8.991,157.979
+266030,Soputan,22354,Confirmed Eruption,,2,,,3/23/2020,2020,,3,,23,,Historical Observations,,4/2/2020,2020,,4,,2,,1.112,124.737
+300130,Karymsky,22360,Confirmed Eruption,,3,,,4/1/2020,2020,,4,,1,,Historical Observations,>,3/17/2022,2022,,3,,17,,54.049,159.443
+282060,Kikai,22359,Confirmed Eruption,,1,,,4/29/2020,2020,,4,,29,,Historical Observations,,4/29/2020,2020,,4,,29,,30.793,130.305
+311240,Cleveland,22361,Confirmed Eruption,,3,,,6/1/2020,2020,,6,,1,,Historical Observations,,6/1/2020,2020,,6,,1,,52.825,-169.944
+357090,Copahue,22376,Confirmed Eruption,Agrio Crater,2,,,6/16/2020,2020,,6,,16,,Historical Observations,,11/2/2020,2020,,11,,2,,-37.856,-71.183
+345070,Turrialba,22369,Confirmed Eruption,,1,,,6/18/2020,2020,,6,,18,,Historical Observations,,8/24/2020,2020,,8,,24,,10.025,-83.767
+263340,Raung,22367,Confirmed Eruption,,1,,,7/16/2020,2020,,7,,16,,Historical Observations,,10/3/2020,2020,,10,,3,,-8.119,114.056
+344040,Telica,22368,Confirmed Eruption,,1,,,7/20/2020,2020,,7,,20,,Historical Observations,,12/9/2020,2020,,12,,9,,12.606,-86.84
+282050,Kuchinoerabujima,22391,Confirmed Eruption,,1,,,8/29/2020,2020,,8,,29,,Historical Observations,,8/29/2020,2020,,8,,29,,30.443,130.217
+261080,Sinabung,22365,Confirmed Eruption,,3,,,8/8/2020,2020,,8,,8,,Historical Observations,,9/23/2021,2021,,9,,23,,3.17,98.392
+255060,Kavachi,22364,Confirmed Eruption,,0,,,9/2/2020,2020,,9,,2,,Historical Observations,,4/10/2021,2021,,4,,10,,-8.991,157.979
