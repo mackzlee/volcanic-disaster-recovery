@@ -8,3 +8,5 @@ data/Holocene_Volcanos.csv
 .RData
 .ipynb_checkpoints/*
 volcano photo images/*
+LULC/.ipynb_checkpoints/LULC_modified_resnet50-checkpoint.ipynb
+data/~$volcano_cities.xlsx
