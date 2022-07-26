@@ -14,9 +14,8 @@ Developing nations lack the same volcanic detection and monitoring infrastructur
 
 ### Team
 
-![Ren](src)
-![Jeff](src)
-![Mackenzie](src)
-![Anne](src)
+Ren Tu             |  Jeffrey Adams        |  Mackenzie Lee      | Anne Marshall
+:-------------------------:|:-------------------------: | :-------------------------: | :-------------------------:
+<img src="images/renimage.png" alt="Ren Tu" width="100" height="100"/> |  <img src="images/jeffimage.png" alt="Jeffrey Adams" width="100" height="100"/> | <img src="images/mackenzieimage.png" alt="Mackenzie Lee" width="100" height="100"/> |  <img src="images/anneimage.png" alt="Anne Marshall" width="100" height="100"/>
 
 MIDS Capstone Summer 2022
