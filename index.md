@@ -1,4 +1,19 @@
-## VolcanoResponse
+# VolcanoResponse
+
+## Mission
+
+<p align="center">To Improve the efficiency of disaster response resources for volcano eruptions in developing countries, using computer vision estimates based on recent satellite image data.</p>
+
+## Problem
+
+Developing nations lack the same volcanic detection and monitoring infrastructure as developed nations that are important in preparing for eruptions. We aim to bridge this resource and knowledge gap by using computer vision and data science on satellite imagery to pinpoint which areas are likely to be damaged alongside damage severity estimates. International Disaster Response Organizations can utilize this knowledge to be better informed on what decisions to make and how to effectively utilize resources to protect communities and save lives.
+
+## [Check Out the App Here](url)
+
+![Dashboard Image](src)
+
+### Team
+
 
 You can use the [editor on GitHub](https://github.com/mackzlee/volcanic-disaster-recovery/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
