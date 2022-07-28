@@ -10,7 +10,7 @@ Developing nations lack the same volcanic detection and monitoring infrastructur
 
 ## [Check Out the VolcanoResponse Dashboard Here](https://armds.users.earthengine.app/view/volcanoresponse)
 
-![images/dashboard_image.png](https://github.com/mackzlee/volcanic-disaster-recovery/blob/gh-pages/images/dashboard_image.png)
+<img src="images/dashboard_image.png" alt="Dashboard Image"/>
 
 ### Team
 
