@@ -8,9 +8,9 @@
 
 Developing nations lack the same volcanic detection and monitoring infrastructure as developed nations that are important in preparing for eruptions. We aim to bridge this resource and knowledge gap by using computer vision and data science on satellite imagery to pinpoint which areas are likely to be damaged alongside damage severity estimates. International Disaster Response Organizations can utilize this knowledge to be better informed on what decisions to make and how to effectively utilize resources to protect communities and save lives.
 
-## [Check Out the App Here](url)
+## [Check Out the VolcanoResponse Dashboard Here](https://armds.users.earthengine.app/view/volcanoresponse)
 
-![Dashboard Image](src)
+![images/dashboard_image.png](https://github.com/mackzlee/volcanic-disaster-recovery/blob/gh-pages/images/dashboard_image.png)
 
 ### Team
 
