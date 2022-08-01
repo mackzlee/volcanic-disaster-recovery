@@ -10,11 +10,13 @@ Developing nations lack the same volcanic detection and monitoring infrastructur
 
 ## [Check Out the VolcanoResponse Dashboard Here](https://armds.users.earthengine.app/view/volcanoresponse)
 
-Watch this [video](youtube.com) to learn how to use the dashboard.
+Watch this [video](https://www.youtube.com/watch?v=xKP1_xmywdo) to learn how to use the dashboard.
 
 <img src="images/dashboard_image.png" alt="Dashboard Image"/>
 
-### Team
+VolcanoResponse is focused on improving disaster response to volcano eruptions affecting 8% of the population that are within 100 kilometers of potentially active volcanoes in developing countries. Using satellite imagery across multiple channels, we are utilizing computer vision processing and prediction techniques within our MVP intended for disaster response organizations. We seek to use our MVP to contribute to peer learning about combining satellite data and machine learning for the task of volcanic damage classification.
+
+## Team
 
 Ren Tu             |  Jeffrey Adams        |  Mackenzie Lee      | Anne Marshall
 :-------------------------:|:-------------------------: | :-------------------------: | :-------------------------:
